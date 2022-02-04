@@ -1,0 +1,313 @@
+body {
+
+    background-image: url(img/back.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: auto;
+    height: auto;
+    background-repeat: repeat-x;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.aux2 {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.sss {
+    margin: 8% 0 0 0;
+    display: flex;
+    justify-content: center;
+    border: none;
+    text-shadow: 0 0 5px rgb(255, 0, 0);
+
+}
+
+.cifrao {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-family: cursive, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.saldo {
+    display: inline-block;
+
+    color: rgb(255, 255, 255);
+    font-family: cursive, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.saldo_e_cifrao {
+
+
+    border-radius: 20px 20px 0px 0px;
+    font-family: cursive, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+
+}
+
+p {
+    margin: 0 0 0 0;
+    padding: 0;
+}
+
+
+.aux {
+    display: inline-flex;
+    background-image: url(img/back_buraco.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    width: 350px;
+    height: 350px;
+    border: none;
+
+}
+
+.todos_botao_mina {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2%;
+    border-radius: 12%;
+    width: 100%;
+    border: none;
+
+}
+
+.botao_mina {
+    background: none;
+    border-radius: 50%;
+    width: 22%;
+    height: 22%;
+    border: none;
+    border: none;
+}
+
+.limpa_tudo {
+    width: 90px;
+    height: 90px;
+    background-color: rgb(3, 28, 56);
+    background-image: none;
+    border: none;
+}
+
+
+.classe_diamante_aparecendo_revelado {
+    width: 22%;
+    height: 22%;
+    background-image: url('img/diamante.png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    animation: diamante_aparecendo 100ms linear;
+}
+
+
+.classe_diamante_aparecendo {
+    width: 22%;
+    height: 22%;
+    background-image: url('img/diamante.png');
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    animation: diamante_aparecendo 100ms linear;
+}
+
+@keyframes diamante_aparecendo {
+    0% {
+        background-size: 0%;
+    }
+
+    100% {
+        background-size: 100%;
+    }
+}
+
+.classe_bomba_aparecendo_revelado {
+    width: 22%;
+    height: 22%;
+    background-image: url(img/bomba.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    animation: bomba_aparecendo 100ms linear;
+}
+
+.classe_bomba_aparecendo {
+    width: 22%;
+    height: 22%;
+    background-image: url(img/bomba.png);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    animation: bomba_aparecendo 100ms linear;
+}
+
+@keyframes bomba_aparecendo {
+    0% {
+        background-size: 0%;
+    }
+
+    100% {
+        background-size: 80%;
+    }
+}
+
+
+.botoes_3 {
+
+    display: flex;
+    margin: 20px 0 20px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.dobrar {
+    background-color: rgb(35, 210, 226);
+    color: rgb(0, 0, 0);
+    border: none;
+    width: 80px;
+    height: 50px;
+    border-radius: 0 25px 25px 0;
+}
+
+.campo_aposta {
+    background-color: darkslateblue;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 0;
+    border: none;
+    width: 80px;
+    height: 50px;
+}
+
+.dividir {
+    background-color: rgb(35, 210, 226);
+    color: rgb(0, 0, 0);
+    border: none;
+    width: 80px;
+    height: 50px;
+    border-radius: 25px 0 0 25px;
+}
+
+.bt_aposta {
+    width: 100px;
+    height: 100px;
+    border: none;
+    background: none;
+    background-image: url(img/pa.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    animation: anima_pa 1000ms linear infinite;
+    position: relative;
+}
+
+
+
+.bt_sacar {
+    width: 100px;
+    height: 100px;
+    border: none;
+    background: none;
+    background-image: url(img/dinheiro.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    position: relative;
+}
+
+.bt_aposta p, .bt_sacar p {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-weight: 700;
+}
+
+.remover_botao {
+    display: none;
+}
+
+.remover_botao_diamante_bomba {
+    visibility: hidden;
+}
+
+@keyframes anima_pa {
+    0% {
+        background-size: 70%;
+    }
+
+    50% {
+        background-size: 80%;
+
+    }
+
+    100% {
+        background-size: 70%;
+    }
+
+}
+
+.coloca_diamante {
+    display: inline-block;
+    background: none;
+    background-color: rgb(93, 52, 23);
+    border: solid wheat;
+    background-image: url(img/diamante.png);
+    background-size: 90%;
+    border-radius: 50px 0 0 50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 200px;
+    position: relative;
+
+}
+
+.coloca_bomba {
+    display: inline-block;
+    background: none;
+    background-color: rgb(93, 52, 23);
+    border: solid wheat;
+    background-image: url(img/bomba_redonda.png);
+    background-size: 150%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 50px 50px 0;
+    width: 50px;
+    height: 200px;
+    position: relative;
+
+}
+
+.coloca_bomba p, .coloca_diamante p {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    font-size: 20px;
+
+
+
+}
