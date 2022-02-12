@@ -5,23 +5,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MINA_BOMBA</title>
+    <title>MINA_BOMBA</title> 
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="data:,">
 </head>
 
 <body>
-    <div class="sss">
+  
         <div class="saldo_e_cifrao">
-            <p class="cifrao">R$</p>
-            <p class="saldo" id="saldo"> 1000 </p>
+            <div class="cifrao">R$</div>
+            <div class="saldo" id="saldo"> 1000 </div>
         </div>
-    </div>
-    <div class="aux2">
-        <button class="coloca_diamante" id="coloca_diamante">
-            <p id="coloca_diamante_numero">15</p>
-        </button>
+    
+
+
+    <div class="container">
         <div class="aux">
+            <button class="coloca_diamante" id="coloca_diamante">
+                <p id="coloca_diamante_numero">15</p>
+            </button>
             <div class="todos_botao_mina">
                 <button class="botao_mina" id="bm1"></button>
                 <button class="botao_mina" id="bm2"></button>
@@ -40,11 +42,18 @@
                 <button class="botao_mina" id="bm15"></button>
                 <button class="botao_mina" id="bm16"></button>
             </div>
+            <button class="coloca_bomba" id="coloca_bomba">
+                <p id="coloca_bomba_numero">1</p>
+            </button>
         </div>
-        <button class="coloca_bomba" id="coloca_bomba">
-            <p id="coloca_bomba_numero">1</p>
-        </button>
     </div>
+  
+
+
+
+
+    
+
     <div class="botoes_3">
         <button class="dividir" id="dividir">1/2</button>
         <input class="campo_aposta" type="text" id="campo_aposta" placeholder="Aposta" min="0.01" maxlength="6"
@@ -57,12 +66,16 @@
                                 event.charCode == 110 ">
         <button class="dobrar" id="dobrar">X2</button>
     </div>
+
+    <div class="aposta_sacar">
     <button class="bt_aposta" id="bt_apostar">
         <p> APOSTAR </p>
     </button>
     <button class="bt_sacar" id="bt_sacar">
         <p> SACAR </p>
     </button>
+</div>
+
 </body>
 <script src="script.js"></script>
 
